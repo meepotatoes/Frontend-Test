@@ -129,7 +129,7 @@ section {
 
 @media (max-width: $mobile-tablet) {
     section {
-        padding: 8px 14px 40px 14px;
+        padding: 8px 14px 30px 14px;
         .wrapper {
             border-radius: 15px;
             overflow: hidden;
@@ -160,24 +160,25 @@ section {
 
 #tabsTestimonial {
     ul.slick-dots{
+        bottom: 0;
         li{
-            width:10px;
-            height:10px;
+            width:8px;
+            height:8px;
            
             button{
                 background-color: var(--secondary-color);
-                width:10px;
-                height:10px;
+                width:8px;
+                height:8px;
                 border-radius:20px;
                 
                 
             }
             &.slick-active{
-                width:40px;
+                width:28px;
                 
                 button{
                     background: var(--sunset);
-                    width:40px;
+                    width:28px;
                 }
             }
         }

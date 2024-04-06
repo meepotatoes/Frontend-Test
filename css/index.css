@@ -106,7 +106,7 @@ section {
 
 @media (max-width: 991px) {
   section {
-    padding: 8px 14px 40px 14px; }
+    padding: 8px 14px 30px 14px; }
     section .wrapper {
       border-radius: 15px;
       overflow: hidden;
@@ -124,18 +124,20 @@ section {
         padding: 28px 10px;
         min-height: 100%;
         text-align: center; } }
-#tabsTestimonial ul.slick-dots li {
-  width: 10px;
-  height: 10px; }
-  #tabsTestimonial ul.slick-dots li button {
-    background-color: var(--secondary-color);
-    width: 10px;
-    height: 10px;
-    border-radius: 20px; }
-  #tabsTestimonial ul.slick-dots li.slick-active {
-    width: 40px; }
-    #tabsTestimonial ul.slick-dots li.slick-active button {
-      background: var(--sunset);
-      width: 40px; }
+#tabsTestimonial ul.slick-dots {
+  bottom: 0; }
+  #tabsTestimonial ul.slick-dots li {
+    width: 8px;
+    height: 8px; }
+    #tabsTestimonial ul.slick-dots li button {
+      background-color: var(--secondary-color);
+      width: 8px;
+      height: 8px;
+      border-radius: 20px; }
+    #tabsTestimonial ul.slick-dots li.slick-active {
+      width: 28px; }
+      #tabsTestimonial ul.slick-dots li.slick-active button {
+        background: var(--sunset);
+        width: 28px; }
 
 /*# sourceMappingURL=index.css.map */
