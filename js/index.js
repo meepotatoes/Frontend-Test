@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     console.log('page load ready');
     function initializeSlider() {
       jQuery('.slider').slick({
@@ -43,4 +43,40 @@ $(document).ready(function(){
       }
   });
 
+});*/
+
+$slickGreen = false;
+function greenSlider(){    
+    if($(window).width() < 991){
+        if(!$slickGreen){
+            $('.slider ').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+                adaptiveHeight: true
+              });
+            $slickGreen = true;
+        }
+    } else if($(window).width() > 992){
+        if($slickGreen){
+            $('.slider').slick('unslick');
+            $slickGreen = false;
+        }
+    }
+};
+
+$(document).ready(function(){
+    greenSlider();
+
+
 });
+$(window).on('resize', function(){
+    greenSlider();
+
+});
+
+

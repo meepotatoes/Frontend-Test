@@ -13,9 +13,9 @@
 
 // add your custom styles here 👇
 * {
-    padding: 0;  
-    margin: 0;
     box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
 // media query sizes
@@ -87,6 +87,9 @@ section {
             .content-wrapper {
                 order: 1;
                 padding: 100px 60px 100px 100px;
+                @media (max-width: $mobile-tablet) { 
+                    padding:0px;
+                }
             }
         }
         .image-wrapper {
@@ -153,3 +156,30 @@ section {
         }
     }
 }
+
+
+#tabsTestimonial {
+    ul.slick-dots{
+        li{
+            width:10px;
+            height:10px;
+           
+            button{
+                background-color: var(--secondary-color);
+                width:10px;
+                height:10px;
+                border-radius:20px;
+                
+                
+            }
+            &.slick-active{
+                width:40px;
+                
+                button{
+                    background: var(--sunset);
+                    width:40px;
+                }
+            }
+        }
+    }
+} 
